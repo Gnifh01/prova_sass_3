@@ -1,0 +1,48 @@
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: aqua;
+  @include flexBetween;
+ /*  position: fixed; */
+
+  .logo {
+    width: 100%;
+    margin-left: 5rem;
+
+    span {
+      display: block;
+      width: 12rem;
+      height: 5rem;
+      background: #f00;
+    }
+  }
+
+  .menu {
+    width: 100%;
+    margin-right: 3rem;
+
+    ul {
+     @include flexCenter;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          font-size: 2rem;
+          margin: 0rem 2rem;
+
+          &:hover {
+            text-decoration: underline;
+            color: #fff;
+          }
+          
+          &::before {
+              content: '> ';
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+@function theme($theme: default) {
+  @if $theme == default {
+    @return #01b9ff;
+  } 
+  @else if $theme == light {
+    @return $bg-light;
+  } 
+  @else if $theme == dark {
+    @return $bg-dark;
+  } 
+  @else {
+    @return $bg-7;
+  }
+}
+

@@ -1,0 +1,17 @@
+
+section {
+    width: 100%;
+    height: 90vh;
+
+    .hero-1{
+        @include dinamicBackground(1, 0px, 90deg);
+    }
+
+    .hero-2{
+        @include dinamicBackground(2, 0px);
+    }
+
+    .hero-3{
+        @include dinamicBackground(3, 0px, 260deg);
+    }
+}

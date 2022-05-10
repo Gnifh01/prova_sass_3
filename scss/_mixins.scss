@@ -1,0 +1,30 @@
+/* MIXINS STATICI */
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MIXINS DINAMICI */
+
+@mixin dinamicBackground($img_num:1, $blur:2px, $deg:0) {
+    background: url("../img/img" + $img_num + ".jpg") no-repeat center center;
+    width: 100%;
+    height: 100%;
+    filter: blur($blur);
+    filter: hue-rotate($deg);
+}

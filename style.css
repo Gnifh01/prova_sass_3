@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* VARIABILI */
+/* $nome : valore; */
+/* MIXINS AND FUNCTIONS*/
+/* MIXINS STATICI */
+/* MIXINS DINAMICI */
+/* PARTIALS */
+button, .err, .war, .suc {
+  margin: 2rem 3rem;
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  background-color: #ffffff;
+}
+
+.suc {
+  background-color: hsl(100deg, 100%, 50%);
+}
+
+.war {
+  background-color: hsl(60deg, 100%, 50%);
+}
+
+.err {
+  background-color: hsl(10deg, 100%, 50%);
+}
+
+h1, .a, h2, .b, h3, .c, h4, .d {
+  font-size: 4rem;
+}
+
+.a {
+  color: hsl(10deg, 100%, 50%);
+}
+
+.b {
+  color: hsl(30deg, 100%, 50%);
+}
+
+.c {
+  color: hsl(60deg, 100%, 50%);
+}
+
+.d {
+  color: hsl(100deg, 100%, 50%);
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*  position: fixed; */
+}
+nav .logo {
+  width: 100%;
+  margin-left: 5rem;
+}
+nav .logo span {
+  display: block;
+  width: 12rem;
+  height: 5rem;
+  background: #f00;
+}
+nav .menu {
+  width: 100%;
+  margin-right: 3rem;
+}
+nav .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .menu ul li {
+  list-style: none;
+}
+nav .menu ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0rem 2rem;
+}
+nav .menu ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+nav .menu ul li a::before {
+  content: "> ";
+}
+
+section {
+  width: 100%;
+  height: 90vh;
+}
+section .hero-1 {
+  background: url("../img/img1.jpg") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  filter: hue-rotate(90deg);
+}
+section .hero-2 {
+  background: url("../img/img2.jpg") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  filter: hue-rotate(0);
+}
+section .hero-3 {
+  background: url("../img/img3.jpg") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  filter: hue-rotate(260deg);
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+  /* background-color: #colore */
+}
+footer h2, footer .b {
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+@media (max-width: 767px) {
+  footer {
+    background-color: #01b9ff;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    background-color: hsl(70deg, 100%, 50%);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+button {
+    margin: 2rem 3rem;
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    background-color: $bg-light;
+}
+
+.suc {
+    @extend button;
+    background-color: $bg-8;
+}
+
+.war {
+    @extend button;
+    background-color: $bg-6;
+}
+
+.err {
+    @extend button;
+    background-color: $bg-1;
+}
+
+h1,h2,h3,h4 {
+    font-size: 4rem;
+}
+
+.a {
+    @extend h1;
+    color: $bg-1;
+}
+
+.b {
+    @extend h2;
+    color: $bg-3;
+}
+
+.c {
+    @extend h3;
+    color: $bg-6;
+}
+
+.d {
+    @extend h4;
+    color: $bg-8;
+}
